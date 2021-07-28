@@ -75,11 +75,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#works">Works</a>
+              <a class="nav-link" href="/academic">Academic</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="/business">Business</a>
             </li>
           </ul>
         </nav>
@@ -89,20 +89,24 @@
     <!--main-->
     <div class="main">
       <!--Home -->
-      <section class="home" id="home">
-        <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+      <section class="home" id="home" style="background: url('assets/img/hero_bg.jpg') center center/cover">
+        <div
+          class="overlay position-absolute full-width"
+          style="top: 0; left: 0; opacity: 0; height: 100%; z-index: -1"
+        ></div>
+        <div class="container-fluid position-relative">
           <div class="row">
             <div class="col">
-              <div class="banner">
-                <img src="assets/img/jacob_circle.png" alt="jacob_circle" class="m-auto d-block" />
-                <h1 class="pt-10 pb-10 cd-headline clip text-center">Jacob Kaplan</h1>
-                <p class="mt-10 mb-30 text-center">Pre-Med student & VP of Crypto</p>
-                <center>
+              <div class="banner d-flex justify-content-center align-items-center">
+                <div class="banner-info">
+                  <h1 class="pt-10 pb-10 cd-headline clip">Hi, <br />I'm Jacob Kaplan</h1>
+                  <p class="mt-10 mb-30">Pre-Med student & VP of Crypto</p>
                   <a href="#about" class="btn-custom">
                     <span><i class="fas fa-user"></i></span>
                     <span> More About Me</span>
                   </a>
-                </center>
+                </div>
+                <img src="assets/img/jacob_hero.png" alt="jacob_circle" class="m-auto d-block" />
               </div>
             </div>
           </div>
@@ -138,222 +142,6 @@
                   <span><i class="fas fa-cloud-download-alt"></i></span>
                   <span>Download My CV</span>
                 </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Timeline-->
-          <div class="row">
-            <div class="col-12">
-              <!--Timeline-->
-              <h5 class="mb-30">My Expericence</h5>
-              <div class="timeline">
-                <!--item 1-->
-                <div class="item">
-                  <div class="content">
-                    <h6 class="mb-0">Healthcare Inventory Associate <span class="text-muted"> - </span> RGIS LLC</h6>
-                    <small class="text-muted">July 2021 – Current </small>
-                    <ul class="pt-15 mb-0" style="list-style: circle">
-                      <li>- Obtaining multiple pieces of data on medical devices and medication</li>
-                      <li>
-                        - Partners one-on-one with healthcare professionals at an event capturing part numbers, serial
-                        numbers, ndcs and expiration dates of medical devices and/or medication
-                      </li>
-                      <li>- Work swiftly in team efforts in a healthcare setting.</li>
-                    </ul>
-                  </div>
-                </div>
-                <!--item 2-->
-                <div class="item">
-                  <div class="content">
-                    <h6 class="mb-0">Fulfillment Specialist <span class="text-muted"> - </span> Medicomp Inc.</h6>
-                    <small class="text-muted">December 2020 – February 2021 </small>
-                    <ul class="pt-15 mb-0" style="list-style: circle">
-                      <li>
-                        - Processing patient supply requests, process equipment, testing, programming, and updating
-                        cardiac monitoring equipment.
-                      </li>
-                      <li>- Sterilizing and stocking rotation equipment keeping a clean environment</li>
-                      <li>
-                        - Assist with coordinating outsourced kitting services, and shipping services BioReference
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--item 3-->
-                <div class="item">
-                  <div class="content">
-                    <h6 class="mb-0">
-                      Medical Lab Assistant, Melbourne, FL. <span class="text-muted"> - </span> BioReference
-                      Laboratories
-                    </h6>
-                    <small class="text-muted">June – August 2020</small>
-                    <ul class="pt-15 mb-0" style="list-style: circle">
-                      <li>- Extensive Knowledge and practice aiding technicians in clinical lab setting.</li>
-                      <li>- Laboratory Assistant in microbiology, COVID, hematology, and chemistry labs.</li>
-                      <li>
-                        - Familiar with pipetting samples, loading machines, taking samples off machine, storing samples
-                        in database, and retrieving samples.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg">
-              <h5 class="mb-30">My Education</h5>
-              <div class="timeline">
-                <!--item 1-->
-                <div class="item">
-                  <div class="content">
-                    <h6 class="mb-0">
-                      Bachelor of Science in Biomedical Science, Minors in Psychology and Biology (GPA 3.71)
-                      <span class="text-muted"> - </span> Florida Institute of Technology, Melbourne, FL
-                    </h6>
-                    <small class="text-muted">Expected Graduation: May 2022</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Works -->
-      <section id="works" class="section works">
-        <div class="container-fluid">
-          <div class="row mb-50">
-            <div class="col-md-12">
-              <div class="section-title">
-                <h2 class="mb-0">My Works</h2>
-                <p class="text-muted mb-0">A latest creative works.</p>
-              </div>
-            </div>
-          </div>
-          <!--works-items -->
-          <div class="row works-items">
-            <div class="col-lg-4 col-md-6">
-              <!--item -->
-              <div class="item">
-                <div class="image">
-                  <img src="assets/img/works/4.jpg" alt="" />
-                  <div class="overly">
-                    <a href="assets/img/works/4.jpg" class="view-work"> View Work</a>
-                  </div>
-                </div>
-
-                <div class="details d-flex align-items-center">
-                  <p class="mb-0">Microbial Induced Cancer in Humans</p>
-                  <a href="work-single-dark.html" class="ml-auto">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <!--item -->
-              <div class="item">
-                <div class="image">
-                  <img src="assets/img/works/1.jpg" alt="" />
-                  <div class="overly">
-                    <a href="assets/img/works/1.jpg" class="view-work"> View Work</a>
-                  </div>
-                </div>
-
-                <div class="details d-flex align-items-center">
-                  <p class="mb-0">Research Writing Sample</p>
-                  <a href="work-single-dark.html" class="ml-auto"><i class="fas fa-external-link-alt"></i> </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <!--item -->
-              <div class="item">
-                <div class="image">
-                  <img src="assets/img/works/2.jpg" alt="" />
-                  <div class="overly">
-                    <a href="assets/img/works/2.jpg" class="view-work"> View Work</a>
-                  </div>
-                </div>
-
-                <div class="details d-flex align-items-center">
-                  <p class="mb-0">Genetica Writing Sample</p>
-                  <a href="work-single-dark.html" class="ml-auto">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <!--item -->
-              <div class="item">
-                <div class="image">
-                  <img src="assets/img/works/3.jpg" alt="" />
-                  <div class="overly">
-                    <a href="assets/img/works/3.jpg" class="view-work"> View Work</a>
-                  </div>
-                </div>
-
-                <div class="details d-flex align-items-center">
-                  <p class="mb-0">Microbiology Writing Sample</p>
-                  <a href="work-single-dark.html" class="ml-auto">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <!--item -->
-              <div class="item">
-                <div class="image">
-                  <img src="assets/img/works/5.jpg" alt="" />
-                  <div class="overly">
-                    <a href="assets/img/works/5.jpg" class="view-work"> View Work</a>
-                  </div>
-                </div>
-
-                <div class="details d-flex align-items-center">
-                  <p class="mb-0">Organic Chem Writing Sample</p>
-                  <a href="work-single-dark.html" class="ml-auto">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <!--item -->
-              <div class="item">
-                <div class="image">
-                  <img src="assets/img/works/6.jpg" alt="" />
-                  <div class="overly">
-                    <a href="assets/img/works/6.jpg" class="view-work"> View Work</a>
-                  </div>
-                </div>
-
-                <div class="details d-flex align-items-center">
-                  <p class="mb-0">Psychology: Death and Dying Sample</p>
-                  <a href="work-single-dark.html" class="ml-auto">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <!--item -->
-              <div class="item">
-                <div class="image">
-                  <img src="assets/img/works/7.jpg" alt="" />
-                  <div class="overly">
-                    <a href="assets/img/works/7.jpg" class="view-work"> View Work</a>
-                  </div>
-                </div>
-
-                <div class="details d-flex align-items-center">
-                  <p class="mb-0">Biochemistry Writing Sample</p>
-                  <a href="work-single-dark.html" class="ml-auto">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
