@@ -1,0 +1,72 @@
+/* ------------------------------
+		 Home
+------------------------------ */
+.home{
+	background-size: cover;
+	background-position: center center;
+	padding-left:40px;
+	padding-right: 40px;
+	position: relative;
+	z-index: 1;
+
+	.social-home{
+  		position: absolute;
+		top:30px;
+		@include social-media();
+	}
+    .banner{
+        h6{
+			font-weight: $f-w-400;
+			letter-spacing: 1px;
+			color:$text-color;
+		}
+		h1{
+			font-weight: $f-w-900;
+			&.cd-headline {
+  				font-size:$f-s-h1;
+				font-weight: $f-w-900;
+				
+				&.clip span {
+  					padding: 0;
+				}
+				.cd-words-wrapper {
+					b{
+						font-weight: $f-w-900;
+					}
+					&:after {
+ 						background-color: transparent;
+					}
+				}
+			}
+		}
+    }
+}
+
+.my-info{
+	width:100%;
+	display: flex;
+	position: absolute;
+	bottom: 30px; 
+	.item{
+		padding-right: 30px;
+		p:first-child{
+			color:$text-color;
+		}
+		p:last-child{
+			font-size: 15px;
+			color:$text-color;
+		}
+	}
+}
+
+    
+
+
+	
+
+
+	
+
+
+ 
+     

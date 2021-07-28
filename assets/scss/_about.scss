@@ -1,0 +1,84 @@
+/* ------------------------------
+		 About  
+------------------------------ */
+.about{
+	.hero{
+		border:1px solid $bg-light;
+		padding: 6px;
+		border-radius: $rd-round;
+		img{
+			border-radius:$rd-round;
+		}
+	}
+    .details{
+    	.info{
+			display: inline-block;
+			width: 100%;
+			li{
+				margin-bottom: 10px;
+    			width: 50%;
+				float: left;
+				span{
+					color:$text-color;
+					font-weight: $f-w-700;
+					margin-right:5px;
+				}
+			}
+		}
+    }
+	.features{
+		.item{
+			padding: 24px 20px 20px 20px;
+			text-align: center;
+			margin-bottom: 30px;
+			background-color: $bg-light;
+			border-radius: $rd-round;
+	 		.icon i{
+				font-size: 25px;
+				color:$text-color;
+			}
+			p{
+				color:$text-color;
+			}
+		}
+	}
+	
+    .timeline{
+		padding: 30px;
+		margin-bottom: 30px;
+		@include box();
+		.item{
+			position: relative;	
+			padding: 0;
+			border-radius: $rd-round;
+
+			&::after{
+				@include after(-4px,4px,8px,8px);
+				background-color:$base-color;
+				border-radius: $rd-circle;
+			}
+			&::before{
+				@include after(0px,30px,1px,100%);
+				background-color:$base-color;
+			}
+			.content{
+				padding: 0px 0px 0px 50px;
+				margin-bottom:50px;
+		  	 	h6{
+					text-transform:capitalize;
+				   font-size: 18px;
+		   		}
+			}
+			&:last-child{
+				.content{
+					padding-bottom: 0;
+					margin-bottom: 30px;
+				}
+			}
+	  	}
+	}
+}
+
+
+
+
