@@ -1,0 +1,47 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  margin-top: var(--header-height);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.gutter {
+  padding: 4rem 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.5;
+}

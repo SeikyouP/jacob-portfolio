@@ -1,0 +1,15 @@
+.button {
+  background: var(--primary);
+  color: var(--white);
+  width: 11rem;
+  line-height: 3.5rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 2rem;
+  border: 0.125rem solid var(--primary);
+
+  &--alt {
+    background: var(--white);
+    color: var(--primary);
+  }
+}

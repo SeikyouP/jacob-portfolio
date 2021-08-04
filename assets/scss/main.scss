@@ -1,62 +1,9 @@
-
-@import 'variables';
-@import 'mixin';
-@import 'global';
-@import 'header-left';
-@import 'menu';
+@import 'reset';
+@import 'settings';
+@import 'globals';
+@import 'component';
+@import 'header';
 @import 'home';
 @import 'about';
-@import 'works';
 @import 'contact';
-@import 'preloader';
-@import 'responsive';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import 'footer';
