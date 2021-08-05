@@ -16,6 +16,12 @@
       width: 100%;
       margin: 0.5rem 0;
       padding: 1rem;
+      font-size: 1.125rem;
+
+      &[placeholder] {
+        font-size: 1.125rem;
+        font-family: var(--primary-font);
+      }
     }
 
     textarea {
@@ -25,5 +31,8 @@
 
   &_button {
     margin-top: 1rem;
+    font-family: var(--primary-font);
+    font-size: 1.125rem;
+    cursor: pointer;
   }
 }

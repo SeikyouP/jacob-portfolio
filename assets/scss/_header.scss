@@ -12,11 +12,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1rem;
   }
 
   &_logo {
     font-size: 2rem;
     font-weight: 700;
+
+    a {
+      line-height: var(--header-height);
+      display: block;
+    }
   }
 
   &_list {
@@ -25,7 +31,7 @@
     justify-content: space-between;
 
     & > * + * {
-      margin-left: 1rem;
+      margin-left: 1.5rem;
     }
   }
 

@@ -15,7 +15,7 @@ html {
 
 body {
   overflow-x: hidden;
-  margin-top: var(--header-height);
+  padding-top: var(--header-height);
 }
 
 .container {
@@ -24,7 +24,7 @@ body {
 }
 
 .gutter {
-  padding: 4rem 1rem;
+  padding: var(--header-height) 1rem;
 }
 
 ul {
