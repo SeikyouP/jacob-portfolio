@@ -34,5 +34,11 @@
     font-family: var(--primary-font);
     font-size: 1.125rem;
     cursor: pointer;
+
+    @media (max-width: 500px) {
+      // width: 100%;
+      margin: 1rem auto;
+      display: block;
+    }
   }
 }

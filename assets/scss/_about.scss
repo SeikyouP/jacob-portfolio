@@ -7,9 +7,48 @@
     & > * + * {
       margin-left: 2rem;
     }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      & > * + * {
+        margin: 0rem;
+      }
+    }
+  }
+
+  &_image {
+    width: 37.5%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &_info {
+    width: 62.5%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   &_title {
     font-size: 2rem;
+
+    @media (max-width: 768px) {
+      padding-top: 5rem;
+      text-align: center;
+    }
+  }
+
+  &_description {
+    @media (max-width: 768px) {
+      padding-top: 2rem;
+    }
   }
 }

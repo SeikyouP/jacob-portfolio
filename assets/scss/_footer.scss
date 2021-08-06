@@ -2,10 +2,12 @@
   background: var(--primary);
   color: var(--white);
   min-height: var(--footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &_copyright {
     text-align: center;
     font-size: 1.125rem;
-    line-height: var(--footer-height);
   }
 }
