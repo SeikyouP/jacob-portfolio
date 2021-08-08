@@ -19,3 +19,6 @@ for (i = 0; i < menuLinks.length; i++) {
     body.classList.remove('disable-scroll')
   })
 }
+
+// PDF
+pdfjsLib.getDocument('helloworld.pdf')
