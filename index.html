@@ -173,21 +173,22 @@
 
           <form class="contact_form" method="post" action="https://formsubmit.co/8df488cc63916253e0a329f7c52f4c1e">
             <div class="contact_form-group">
-              <input type="text" name="name" id="text" placeholder="Name" required />
+              <input type="text" name="name" placeholder="Full Name" required />
             </div>
             <div class="contact_form-group">
-              <input type="email" name="email" id="email" placeholder="Email" required />
+              <input type="email" name="email" placeholder="Email Address" required />
             </div>
             <input type="hidden" name="_next" value="https://main--stupefied-shaw-daca2e.netlify.app/send.html" />
+            <input type="hidden" name="_template" value="table" />
             <div class="contact_form-group">
-              <input type="text" name="subject" id="subject" placeholder="Subject" required />
+              <input type="text" name="subject" placeholder="Subject" required />
             </div>
             <div class="contact_form-group">
-              <textarea name="message" id="message" placeholder="Message" rows="10" required></textarea>
+              <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
             </div>
 
-            <button type="submit" name="submit" class="contact_button button">Send</button>
-            <button type="reset" name="reset" class="contact_button button">Reset</button>
+            <button type="submit" name="submit" class="contact_button button">Submit Form</button>
+            <button type="reset" name="reset" class="contact_button button">Reset Form</button>
           </form>
         </div>
       </section>
