@@ -20,5 +20,3 @@ for (i = 0; i < menuLinks.length; i++) {
   })
 }
 
-// PDF
-pdfjsLib.getDocument('helloworld.pdf')

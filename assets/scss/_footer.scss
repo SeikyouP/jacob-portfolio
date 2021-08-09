@@ -9,5 +9,11 @@
   &_copyright {
     text-align: center;
     font-size: 1.125rem;
+
+    @media (max-width: 500px) {
+      span {
+        display: block;
+      }
+    }
   }
 }
