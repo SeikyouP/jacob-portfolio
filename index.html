@@ -49,7 +49,7 @@
         <nav class="header_navbar">
           <!-- Logo -->
           <div class="header_logo">
-            <a href="#">Jacob</a>
+            <a href="/">Jacob</a>
           </div>
 
           <!-- Menu -->
@@ -83,7 +83,7 @@
         <nav class="mobile-header_topbar">
           <!-- Logo -->
           <div class="mobile-header_logo">
-            <a href="#">Jacob</a>
+            <a href="/">Jacob</a>
           </div>
 
           <!-- Menu Toggle -->
@@ -122,7 +122,8 @@
     <main class="main-content">
       <!-- Start of Home -->
       <section class="home">
-        <div class="home_inner container gutter">
+        <div class="home_overlay"></div>
+        <div class="home_inner container">
           <div class="home_hero">
             <div class="home_info">
               <h1 class="home_name">Jacob Kaplan</h1>
@@ -189,8 +190,11 @@
             <div class="contact_form-group">
               <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
             </div>
-            <button type="submit" class="contact_button button">Submit Form</button>
-            <button type="reset" class="contact_button button">Reset Form</button>
+
+            <div class="contact_button-group">
+              <button type="submit" class="contact_button button">Submit Form</button>
+              <button type="reset" class="contact_button button">Reset Form</button>
+            </div>
           </form>
         </div>
       </section>

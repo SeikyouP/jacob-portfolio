@@ -18,11 +18,12 @@
   }
 
   &_image {
-    width: 37.5%;
-
-    @media (max-width: 768px) {
-      width: 100%;
-    }
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: var(--light);
+    border: 2rem solid var(--light);
+    overflow: hidden;
 
     img {
       width: 100%;
