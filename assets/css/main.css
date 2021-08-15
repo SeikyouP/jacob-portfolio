@@ -124,7 +124,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -157,15 +157,15 @@ table {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --default-font: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --primary-font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --secondary-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --tertiary-font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --monospace-font: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --default-font: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --primary-font: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --secondary-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --tertiary-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --monospace-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --header-height: 5rem;
   --footer-height: 5rem;
 }
@@ -187,7 +187,6 @@ body {
   overflow-x: hidden;
   padding-top: var(--header-height);
 }
-
 body.disable-scroll {
   overflow: hidden !important;
 }
@@ -236,12 +235,10 @@ p {
   -webkit-transition: background 0.5s ease, border 0.5s ease, color 0.5s ease;
   transition: background 0.5s ease, border 0.5s ease, color 0.5s ease;
 }
-
 .button--alt {
   background: var(--white);
   color: var(--primary);
 }
-
 .button:hover {
   background: var(--secondary);
   border: 0.125rem solid var(--secondary);
@@ -316,7 +313,7 @@ p {
 
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: '';
+  content: "";
   display: block;
 }
 
@@ -387,13 +384,11 @@ p {
   text-transform: uppercase;
   z-index: 1000;
 }
-
 @media (max-width: 768px) {
   .header {
     display: none;
   }
 }
-
 .header_navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,17 +401,14 @@ p {
           justify-content: space-between;
   padding: 0 1rem;
 }
-
 .header_logo {
   font-size: 2rem;
   font-weight: 700;
 }
-
 .header_logo a {
   line-height: var(--header-height);
   display: block;
 }
-
 .header_list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,17 +420,14 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .header_list > * + * {
   margin-left: 1.5rem;
 }
-
 .header_link {
   display: block;
   line-height: var(--header-height);
   font-size: 1.125rem;
 }
-
 .header_link:hover {
   text-decoration: underline;
 }
@@ -458,17 +447,14 @@ p {
   transition: height 0.5s ease;
   z-index: 1000;
 }
-
 .mobile-header--open {
   height: 100%;
 }
-
 @media (max-width: 768px) {
   .mobile-header {
     display: block;
   }
 }
-
 .mobile-header_topbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,17 +467,14 @@ p {
           justify-content: space-between;
   padding: 0 1rem;
 }
-
 .mobile-header_logo {
   font-size: 2rem;
   font-weight: 700;
 }
-
 .mobile-header_logo a {
   line-height: var(--header-height);
   display: block;
 }
-
 .mobile-header_list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,13 +487,11 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .mobile-header_link {
   display: block;
   line-height: var(--header-height);
   font-size: 1.125rem;
 }
-
 .mobile-header_link:hover {
   text-decoration: underline;
 }
@@ -518,7 +499,6 @@ p {
 .home {
   position: relative;
 }
-
 .home_overlay {
   background: url(../img/hero_bg.jpg) no-repeat center center/cover;
   position: absolute;
@@ -529,7 +509,6 @@ p {
   z-index: -1;
   opacity: 0.25;
 }
-
 .home_hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -542,7 +521,6 @@ p {
           align-items: center;
   padding: 0 1rem;
 }
-
 @media (max-width: 768px) {
   .home_hero {
     -webkit-box-orient: vertical;
@@ -554,40 +532,33 @@ p {
     margin: 0;
   }
 }
-
 .home_name {
   font-size: 3rem;
 }
-
 @media (max-width: 768px) {
   .home_name {
     text-align: center;
   }
 }
-
 @media (max-width: 500px) {
   .home_name {
     font-size: 2.5rem;
   }
 }
-
 .home_role {
   font-size: 1.25rem;
   font-weight: bold;
 }
-
 @media (max-width: 768px) {
   .home_role {
     text-align: center;
   }
 }
-
 @media (max-width: 500px) {
   .home_role {
     font-size: 1rem;
   }
 }
-
 .home_button-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -597,11 +568,9 @@ p {
           align-items: center;
   margin: 2rem 0;
 }
-
 .home_button-group > * + * {
   margin-left: 1rem;
 }
-
 @media (max-width: 768px) {
   .home_button-group {
     display: -webkit-box;
@@ -617,7 +586,6 @@ p {
     margin-top: 1rem;
   }
 }
-
 .home_image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -629,17 +597,14 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .home_image img {
   width: 100%;
 }
-
 @media (max-width: 768px) {
   .home_image img {
     width: 28.125rem;
   }
 }
-
 @media (max-width: 768px) {
   .home_image img {
     width: 100%;
@@ -657,11 +622,9 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .about_hero > * + * {
   margin-left: 2rem;
 }
-
 @media (max-width: 768px) {
   .about_hero {
     -webkit-box-orient: vertical;
@@ -673,7 +636,6 @@ p {
     margin: 0rem;
   }
 }
-
 .about_image {
   width: 300px;
   height: 300px;
@@ -682,32 +644,30 @@ p {
   border: 2rem solid var(--light);
   overflow: hidden;
 }
-
 .about_image img {
   width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 .about_info {
   width: 62.5%;
 }
-
 @media (max-width: 768px) {
   .about_info {
     width: 100%;
   }
 }
-
 .about_title {
   font-size: 2rem;
 }
-
 @media (max-width: 768px) {
   .about_title {
     padding-top: 5rem;
     text-align: center;
   }
 }
-
 @media (max-width: 768px) {
   .about_description {
     padding-top: 2rem;
@@ -717,16 +677,13 @@ p {
 .contact {
   background: var(--light);
 }
-
 .contact_title {
   text-align: center;
   font-size: 2rem;
 }
-
 .contact_form {
   padding: 2rem 0;
 }
-
 .contact_form-group input,
 .contact_form-group textarea {
   width: 100%;
@@ -734,28 +691,23 @@ p {
   padding: 1rem;
   font-size: 1.125rem;
 }
-
 .contact_form-group input[placeholder],
 .contact_form-group textarea[placeholder] {
   font-size: 1.125rem;
   font-family: var(--primary-font);
 }
-
 .contact_form-group textarea {
   resize: none;
 }
-
 .contact_button-group > * + * {
   margin-left: 1rem;
 }
-
 .contact_button {
   margin-top: 1rem;
   font-family: var(--primary-font);
   font-size: 1.125rem;
   cursor: pointer;
 }
-
 @media (max-width: 500px) {
   .contact_button {
     margin: 1rem auto;
@@ -767,45 +719,38 @@ p {
   background: var(--light);
   padding: 2rem;
 }
-
 .academic .experience,
 .academic .education {
   margin: 0 0 2rem;
 }
-
 .academic .experience_title,
 .academic .education_title {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 500;
 }
-
 @media (max-width: 500px) {
   .academic .experience_title,
-  .academic .education_title {
+.academic .education_title {
     text-align: center;
   }
 }
-
 .academic .experience_timeline,
 .academic .education_timeline {
   background: var(--white);
   padding: 2rem;
   border-radius: 0.55rem;
 }
-
 .academic .experience_timeline > * + *,
 .academic .education_timeline > * + * {
   margin-top: 2rem;
 }
-
 .academic .experience_timeline-title,
 .academic .education_timeline-title {
   font-weight: 600;
   font-size: 1.125rem;
   margin-bottom: 0.25rem;
 }
-
 .academic .experience_timeline-date,
 .academic .education_timeline-date {
   font-size: 0.875rem;
@@ -814,37 +759,31 @@ p {
   margin-bottom: 1.5rem;
   display: block;
 }
-
 .academic .experience_timeline-list,
 .academic .education_timeline-list {
   list-style-type: disc;
   padding-left: 1rem;
 }
-
 .academic .experience_timeline-list > * + *,
 .academic .education_timeline-list > * + * {
   margin-top: 0.5rem;
 }
-
 .academic .experience_timeline-item,
 .academic .education_timeline-item {
   line-height: 1.5;
   font-size: 0.875rem;
   color: var(--dark);
 }
-
 .academic .works_title {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 500;
 }
-
 @media (max-width: 500px) {
   .academic .works_title {
     text-align: center;
   }
 }
-
 .academic .works_card-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -856,7 +795,6 @@ p {
       flex-wrap: wrap;
   margin: -1rem;
 }
-
 .academic .works_card-item {
   text-align: center;
   background: var(--white);
@@ -870,20 +808,17 @@ p {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-
 @media (max-width: 500px) {
   .academic .works_card-item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
 }
-
 .academic .works_card-item:last-child {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
 }
-
 @media (max-width: 640px) {
   .academic .works_card-item:last-child {
     -webkit-box-flex: 1;
@@ -891,7 +826,6 @@ p {
             flex-grow: 1;
   }
 }
-
 .academic .works_card-number {
   font-size: 2.5rem;
   font-weight: 700;
@@ -912,17 +846,14 @@ p {
           align-items: center;
   margin: auto;
 }
-
 .academic .works_card-title {
   font-size: 1.125rem;
   font-weight: 700;
   padding: 1rem 0;
 }
-
 .academic .works_card-link {
   margin: 0.5rem;
 }
-
 .academic .works_card-link i {
   padding-left: 0.5rem;
 }
@@ -941,12 +872,10 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .footer_copyright {
   text-align: center;
   font-size: 1.125rem;
 }
-
 @media (max-width: 500px) {
   .footer_copyright span {
     display: block;
