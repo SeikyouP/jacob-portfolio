@@ -146,11 +146,11 @@ table {
   --cyan: #17a2b8;
   --white: #fff;
   --gray: #6c757d;
-  --gray-dark: #343a40;
+  --gray-dark: #333;
   --primary: #4c5d34;
-  --secondary: #5b7742;
+  --secondary: #5e6d48;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #333;
   --black: #000;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -168,6 +168,41 @@ table {
   --monospace-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --header-height: 5rem;
   --footer-height: 5rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #2e381f;
+    --secondary: #4c5d34;
+  }
+  :root .about {
+    background-color: #333;
+    color: var(--white);
+  }
+  :root .about_image {
+    border: 2rem solid #444;
+  }
+  :root .contact {
+    background-color: #222;
+    color: var(--white);
+  }
+  :root .academic {
+    background-color: var(--dark);
+  }
+  :root .experience_title,
+:root .education_title,
+:root .works_title {
+    color: var(--white);
+  }
+  :root .experience_timeline,
+:root .education_timeline,
+:root .works_card-item {
+    background: #222 !important;
+  }
+  :root .experience_timeline *,
+:root .education_timeline *,
+:root .works_card-item * {
+    color: var(--white) !important;
+  }
 }
 
 html {
@@ -192,7 +227,7 @@ body.disable-scroll {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -507,7 +542,7 @@ p {
   right: 0;
   bottom: 0;
   z-index: -1;
-  opacity: 0.25;
+  opacity: 0.5;
 }
 .home_hero {
   display: -webkit-box;
@@ -521,19 +556,24 @@ p {
           align-items: center;
   padding: 0 1rem;
 }
+.home_hero > * + * {
+  margin-left: 2rem;
+}
 @media (max-width: 768px) {
   .home_hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    width: 100%;
   }
   .home_hero > * + * {
     margin: 0;
   }
 }
 .home_name {
-  font-size: 3rem;
+  font-size: 3.25rem;
+  font-weight: 700;
 }
 @media (max-width: 768px) {
   .home_name {
@@ -596,13 +636,14 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .home_image img {
-  width: 100%;
+  width: 25rem;
 }
 @media (max-width: 768px) {
   .home_image img {
-    width: 28.125rem;
+    width: 20rem;
   }
 }
 @media (max-width: 768px) {

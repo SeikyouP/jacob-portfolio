@@ -12,17 +12,56 @@
   --cyan: #17a2b8;
   --white: #fff;
   --gray: #6c757d;
-  --gray-dark: #343a40;
+  --gray-dark: #333;
   --primary: #4c5d34;
-  --secondary: #5b7742;
+  --secondary: #5e6d48;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #333;
   --black: #000;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+
+  @media (prefers-color-scheme: dark) {
+    --primary: #2e381f;
+    --secondary: #4c5d34;
+
+    .about {
+      background-color: #333;
+      color: var(--white);
+
+      &_image {
+        border: 2rem solid #444;
+      }
+    }
+
+    .contact {
+      background-color: #222;
+      color: var(--white);
+    }
+
+    .academic {
+      background-color: var(--dark);
+    }
+
+    .experience_title,
+    .education_title,
+    .works_title {
+      color: var(--white);
+    }
+
+    .experience_timeline,
+    .education_timeline,
+    .works_card-item {
+      background: #222 !important;
+
+      & * {
+        color: var(--white) !important;
+      }
+    }
+  }
 
   // Fonts
   --default-font: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
